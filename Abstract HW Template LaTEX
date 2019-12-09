@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{setspace}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.7}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\pgfplotsset{my style/.append style={axis x line=middle, axis y line=
+middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
+%Wrappers
+\newcommand*\comp[1]{\overline{#1}}        % Complement
+\newcommand*\cross{\times}                 % Cross Product
+\newcommand*\card[1]{\vert{#1}\vert}       % Cardinality
+\renewcommand*\emptyset{\text{\O}}         % Prettier empty set
+\renewcommand*\lnot{\sim}                  % Different Logical Negation Notation
+\newcommand*\ifonlyif{\Longleftrightarrow} % Biconditionality
+\newcommand*\quotes[1]{``{#1}''}           % Quotes
+\newcommand*\singlequotes[1]{`{#1}'}       
+\let\oldforall\forall                      % Adds space to quantifiers
+\renewcommand*\forall{\oldforall\,}  
+\let\oldexists\exists
+\renewcommand*\exists{\oldexists\,}   
+\newcommand{\divides}{\mid}                % Divides
+\newcommand{\notdivides}{\nmid}            % Doesn't divide
+\renewcommand*\mod[1]{(mod ${#1}$)}        % Modulo
+\renewcommand*\gcd[1]{gcd(${#1}$)}         % Greatest Common Divisor
+\newcommand*{\relates}{\sim}               % Relation
+
+\newcommand{\qed}{\hfill \ensuremath{\Box}}
+
+\usepackage[thmmarks,  thref, amsmath]{ntheorem}
+
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+
+\theoremheaderfont{\itshape}
+\theorembodyfont{\upshape}
+\newtheorem{case}{Case}
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\scshape}
+\theoremsymbol{\hfill\ensuremath{ _{\Box}}}
+\theorembodyfont{\upshape}
+\theorempostwork{\setcounter{case}{0}}
+\newtheorem{proof}{Proof}
+
+\author{Wilson Wilson}
+\date{}
+\title{Homework\\MATH 310}
+
+\begin{document}
+\maketitle
+\onehalfspacing
+
+\noindent Problem 1:\\
+\indent(a)
+\\\smallskip
+\\\indent\indent
+\\\smallskip
+
+\indent(b)
+\\\smallskip
+\\\indent\indent
+\\\smallskip
+
+\indent(c) 
+\\\smallskip
+\\\indent\indent 
+
+\newpage
+
+\noindent Problem 2:
+
+\vspace{.5cm}
+\begingroup
+\leftskip 1cm
+\rightskip\leftskip
+
+\noindent 
+
+\endgroup
+\eject
+
+
+
+\end{document}
+
+
