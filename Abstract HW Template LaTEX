@@ -3,6 +3,8 @@
 \usepackage{amssymb}
 \usepackage{fullpage}
 \usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{enumitem}
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.7}
@@ -24,13 +26,11 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 \renewcommand*\forall{\oldforall\,}  
 \let\oldexists\exists
 \renewcommand*\exists{\oldexists\,}   
-\newcommand{\divides}{\mid}                % Divides
-\newcommand{\notdivides}{\nmid}            % Doesn't divide
-\renewcommand*\mod[1]{(mod ${#1}$)}        % Modulo
+\newcommand*{\divides}{\mid}                % Divides
+\newcommand*{\notdivides}{\nmid}            % Doesn't divide
+\renewcommand*\mod[1]{ (mod ${#1}$)}       % Modulo
 \renewcommand*\gcd[1]{gcd(${#1}$)}         % Greatest Common Divisor
 \newcommand*{\relates}{\sim}               % Relation
-
-\newcommand{\qed}{\hfill \ensuremath{\Box}}
 
 \usepackage[thmmarks,  thref, amsmath]{ntheorem}
 
@@ -49,6 +49,7 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 \theorembodyfont{\upshape}
 \theorempostwork{\setcounter{case}{0}}
 \newtheorem{proof}{Proof}
+\renewcommand*{\qed}{\hfill\ensuremath{ _{\Box}}}
 
 \author{Wilson Wilson}
 \date{}
@@ -90,5 +91,6 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 
 
 \end{document}
+
 
 
