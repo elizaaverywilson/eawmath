@@ -46,7 +46,7 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 
 \theoremstyle{nonumberplain}
 \theoremheaderfont{\scshape}
-\theoremsymbol{\hfill\ensuremath{ _{\Box}}}
+\theoremsymbol{\hfill\ensuremath{_{\Box}}}
 \theorembodyfont{\upshape}
 \theorempostwork{\setcounter{case}{0}}
 \newtheorem{proof}{Proof}
@@ -91,6 +91,3 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 
 
 \end{document}
-
-
-
