@@ -31,6 +31,7 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 \newcommand*\lcm[1]{lcm ($#1$)}            % Least Common Multiple
 \newcommand*{\relates}{\sim}               % Relation
 \newcommand*\abs[1]{\vert #1 \vert}        % Absolute Value
+\renewcommand*\choose[2]{\binom{#1}{#2}}   % Modernizes Choose
 
 \newcommand{\qed}{\hfill \ensuremath{\Box}}
 
