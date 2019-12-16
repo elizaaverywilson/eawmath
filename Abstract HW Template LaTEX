@@ -29,6 +29,7 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 \newcommand{\notdivides}{\nmid}            % Doesn't divide
 \renewcommand*\mod[1]{(mod ${#1}$)}        % Modulo
 \renewcommand*\gcd[1]{gcd(${#1}$)}         % Greatest Common Divisor
+\newcommand*\lcm[1]{lcm(${#1}$)}           % Least Common Multiple
 \newcommand*{\relates}{\sim}               % Relation
 
 \newcommand{\qed}{\hfill \ensuremath{\Box}}
