@@ -4,6 +4,8 @@
 \usepackage{fullpage}
 \usepackage{setspace}
 \usepackage[sort]{natbib}
+\usepackage{lipsum}
+\usepackage{enumitem}
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.7}
