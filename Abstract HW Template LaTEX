@@ -29,7 +29,7 @@ middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
 \renewcommand*\exists{\oldexists\,}   
 \newcommand{\divides}{ \mid }              % Divides
 \newcommand{\ndivides}{ \nmid }            % Not Divides
-\renewcommand*\mod[1]{(mod ${#1}$)}        % Modulo
+\renewcommand*\mod[1]{(mod $#1$)}          % Modulo
 \renewcommand*\gcd[1]{gcd ($#1$)}          % Greatest Common Divisor
 \newcommand*\lcm[1]{lcm ($#1$)}            % Least Common Multiple
 \newcommand*{\relates}{\sim}               % Relation
