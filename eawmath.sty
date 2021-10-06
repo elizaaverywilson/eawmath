@@ -1,0 +1,44 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eawmath}[2021/10/05]
+
+% Packages
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb,enumerate}
+\RequirePackage{amsthm,stmaryrd}
+\RequirePackage[all]{xy}
+\RequirePackage{hyperref}
+
+%Special Set Symbols
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\bbz}{\mathbb{Z}}
+\newcommand{\bbq}{\mathbb{Q}}
+\newcommand{\bbn}{\mathbb{N}}
+
+\newcommand*\comp[1]{\overline{#1}}        % Complement
+\newcommand*\cross{\times}                 % Cross Product
+\newcommand*\card[1]{\vert{#1}\vert}       % Cardinality
+\renewcommand*\emptyset{\text{\O}}         % Prettier empty set
+\renewcommand*\lnot{\sim}                  % Different Logical Negation Notation
+\newcommand*\ifonlyif{\Longleftrightarrow} % Biconditionality
+
+\newcommand*\quotes[1]{``{#1}''}           % Quotes
+\newcommand*\singlequotes[1]{`{#1}'}       
+
+\let\oldforall\forall                      % Adds space to quantifiers
+\renewcommand*\forall{\oldforall\,}  
+\let\oldexists\exists
+\renewcommand*\exists{\oldexists\,}   
+
+\newcommand{\divides}{ \mid }              % Divides
+\newcommand{\ndivides}{ \nmid }            % Not Divides
+\renewcommand*\mod[1]{(mod $#1$)}          % Modulo
+\renewcommand*\gcd[1]{gcd ($#1$)}          % Greatest Common Divisor
+\newcommand*\lcm[1]{lcm ($#1$)}            % Least Common Multiple
+\newcommand*{\relates}{\sim}               % Relation
+\newcommand*\abs[1]{\vert #1 \vert}        % Absolute Value
+\renewcommand*\choose[2]{\binom{#1}{#2}}   % Modernizes Choose
+
+
+\end{document}
