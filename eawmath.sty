@@ -40,6 +40,15 @@
 \newcommand*\abs[1]{\vert #1 \vert}        % Absolute Value
 \renewcommand*\choose[2]{\binom{#1}{#2}}   % Modernizes Choose
 
-% \exer{}
+% \prob{}
 \theoremstyle{definition}
 \newtheorem{prob}{Problem}
+
+% Placeholders with todos
+\RequirePackage{todonotes}
+\newcommand*\pl[1]{\todo{Fill in}#1}
+
+% Academic Class Macros
+\newcommand*\mathclass[1]{
+\ifnum#1=455 
+{Introduction to Abstract Algebra\\MATH 455}\else {MATH #1}\fi}

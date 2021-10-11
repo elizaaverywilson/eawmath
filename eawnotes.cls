@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{eawhw}[2021/10/10]
+\ProvidesClass{eawnotes}[2021/10/10]
 
 \LoadClass{article}[12pt]
 
@@ -14,7 +14,7 @@ Eliza Wilson
 \\#2\\}}
 
 % Title
-\newcommand*\hwtitle[1]{\title{Homework #1}
+\newcommand*\notestitle[1]{\title{Notes: #1}
 \date{}
 {\let\newpage\relax%Prevents Page break before title
 \maketitle}}
