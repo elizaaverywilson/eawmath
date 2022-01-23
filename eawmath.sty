@@ -8,6 +8,8 @@
 \RequirePackage{amsthm,stmaryrd}
 \RequirePackage[all]{xy}
 \RequirePackage{hyperref}
+\RequirePackage{tikz}
+\usetikzlibrary{matrix,arrows,decorations.pathmorphing}
 
 %Special Set Symbols
 \newcommand{\bbr}{\mathbb{R}}
@@ -15,6 +17,12 @@
 \newcommand{\bbz}{\mathbb{Z}}
 \newcommand{\bbq}{\mathbb{Q}}
 \newcommand{\bbn}{\mathbb{N}}
+
+\renewcommand{\to}{\rightarrow}
+\renewcommand*\ker{\operatorname{Ker}}
+\newcommand{\aut}[1]{\operatorname{Aut}(#1)}
+\newcommand{\sym}[1]{\operatorname{Sym}(#1)}
+\newcommand{\inn}[1]{\operatorname{Inn}(#1)}
 
 \newcommand*\comp[1]{\overline{#1}}        % Complement
 \newcommand*\cross{\times}                 % Cross Product
@@ -33,20 +41,56 @@
 
 \newcommand{\divides}{ \mid }              % Divides
 \newcommand{\ndivides}{ \nmid }            % Not Divides
-\renewcommand*\mod[1]{(mod $#1$)}          % Modulo
+\renewcommand*\mod[1]{ (mod $#1$)}         % Modulo
 \renewcommand*\gcd[1]{gcd ($#1$)}          % Greatest Common Divisor
 \newcommand*\lcm[1]{lcm ($#1$)}            % Least Common Multiple
 \newcommand*{\relates}{\sim}               % Relation
 \newcommand*\abs[1]{\vert #1 \vert}        % Absolute Value
 \renewcommand*\choose[2]{\binom{#1}{#2}}   % Modernizes Choose
 
-% \prob{}
+%2x2 multiplication tables with and without index. input 1 is operation, input 2-3 are group elements, and 4-7 are outputs.
+\newcounter{multtable}
+\newcommand*\multtable[7]{
+\begin{tabular}{||c || c | c||} 
+ \hline
+ $#1$ & $#2$ & $#3$\\  
+ \hline\hline
+ $#2$ & $#4$ & $#5$\\
+ \hline
+ $#3$  & $#6$ & $#7$\\
+ \hline
+ \end{tabular}}
+\newcounter{multtableindex}
+\newcommand*\multtableindexed[7]{\refstepcounter{multtableindex}\multtable{#1_{\themulttableindex}}{#2}{#3}{#4}{#5}{#6}{#7}}
+
+\newcommand{\matrixtwobytwo}[4]{
+\left[
+\begin{tabular}[]{c c}
+	$#1$ & $#2$\\
+	$#3$ & $#4$
+\end{tabular}
+\right]}
+
+\newcommand{\matrixthreebytwo}[6]{
+\left[
+\begin{tabular}[]{c c c}
+	$#1$ & $#2$ & $#3$\\
+	$#4$ & $#5$ & $#6$
+\end{tabular}
+\right]}
+
+\newtheorem{case}{Case}
+\newtheorem{subcase}{Case}
+\numberwithin{subcase}{case}
 \theoremstyle{definition}
 \newtheorem{prob}{Problem}
 
 % Placeholders with todos
 \RequirePackage{todonotes}
 \newcommand*\pl[1]{\todo{Fill in}#1}
+
+% Newline
+\newcommand{\n}{\newline}
 
 % Academic Class Macros
 \newcommand*\mathclass[1]{
