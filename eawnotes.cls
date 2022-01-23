@@ -11,7 +11,10 @@
 \newcommand*\intr[2]{\flushright{
 Eliza Wilson
 \\#1
-\\#2\\}}
+\\#2\\}
+\flushleft}
+
+\newcommand*\defin[3]{Definition #1 (#2): #3}
 
 % Title
 \newcommand*\notestitle[1]{\title{Notes: #1}
